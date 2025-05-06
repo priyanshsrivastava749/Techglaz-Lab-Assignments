@@ -141,7 +141,6 @@ a {
 }
 .Home-left-side h2 {
   color: var(--text-color);
-  font-size: 1em;
   margin-bottom: 5px;
   font-size: 1.6em;
 }
@@ -223,6 +222,37 @@ a {
   position: fixed;
   padding-right: 10px;
   z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  #Home{
+    display:flex;
+    flex-direction:column-reverse;
+  }
+  .Home-left-side{
+    width:100%;
+    background-color:var(--bg-color);
+    position:relative;
+    z-index:2;
+  }
+  .Home-right-side{
+    display:flex;
+    justify-content:flex-end;
+    width:100%;
+  }
+  .Home-right-side img{
+    height:50vh;
+  }
+  .home-btns{
+    box-shadow: 0 0 5px var(--main-color);
+  }
+  .download-cv{
+    color:black;
+    background-color:var(--main-color);
+  }
+  .interactive-btns-home{
+    margin-top:5px;
+    width:100%;
+  }
 }
 
 #Education {
