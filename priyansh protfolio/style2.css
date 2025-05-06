@@ -1,0 +1,94 @@
+#Skills{
+  height:100vh;
+  width:100%;
+  position:relative;
+  background-color:var(--bg-color);
+  z-index: 2;
+  display:flex;
+  flex-direction:column;
+  color:white;
+  align-items:center;
+}
+#Skills h1{
+font-size: 2.5em;
+margin:20px;
+margin-top:25px;
+}
+.skills-main-grid{
+  width:60%;
+  height:50vh;
+  
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top:10vh;
+
+}
+.skills-grid-item{
+    display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+  padding-top:0px;
+}
+.skills-content{
+  width:60%;
+  height:95%;
+  border:2px solid var(--main-color);
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.skills-content svg{
+  width:100%;
+  height:60%;
+  fill:var(--main-color);
+}
+.skills-content h2{
+  font-size:0.75em;
+}
+.skills-content:hover {
+  transform: scale(1.05); /* thoda zoom effect */
+  box-shadow: var(--main-color) 0px 5px 15px;
+  transition: all 0.3s ease-in-out; /* smoothness */
+  color: white; 
+  cursor:pointer;
+}
+.html-svg:hover svg{
+ fill:#E44D26;
+}
+.cpp-svg:hover svg{
+ fill:#044F88;
+}
+.css-svg:hover svg{
+ fill:#007BFF;
+}
+.javascript-svg:hover svg{
+  fill:#F7DF1E;
+}
+.skills-content:hover .python-top {
+  fill: #3776AB; /* Python Blue on hover */
+}
+
+.skills-content:hover .python-bottom {
+  fill: #FFD43B; /* Python Yellow on hover */
+}
+.c-svg path{
+ fill:var(--main-color);
+}
+.c-svg:hover path{
+ fill:#044F88;
+}
+@media (max-width: 728px){
+  .skills-main-grid{
+  width:80%;
+  height:50vh;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top:5vh;
+}
+
+}

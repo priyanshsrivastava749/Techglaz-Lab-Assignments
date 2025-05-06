@@ -1,0 +1,149 @@
+#Contact{
+  height:100vh;
+  width:100%;
+  position:relative;
+  background-color:var(--second-bg-color);
+  z-index:2;
+  text-align:center;
+  color:white;
+}
+#Contact h1{
+  font-size:2.6em;
+  padding-top:30px;
+}
+#Contact h1 span{
+  color:var(--main-color);
+}
+.contact-container{
+  height:80vh;
+  width:100%;
+  display:flex;
+}
+.user-info{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  align-items:end;
+  margin-top:10vh;
+}
+.user-info-box{
+  width:60%;
+  height:8vh;
+  overflow:hidden;
+  background-color:transparent;
+  border:2px solid var(--main-color);
+  border-radius:10px;
+  margin:10px;
+  padding-left:10px;
+  color:white;
+  transition:all 0.3s ease;
+  font-size:0.8em;
+  outline:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:left;
+}
+.user-info-box:hover,
+.user-info-box:focus {
+  }
+.no-arrow::-webkit-outer-spin-button,
+.no-arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox ke liye */
+.no-arrow {
+  -moz-appearance:textfield;
+}
+.user-message{
+  width:50%;
+  margin-top:10vh;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding-left:30px;
+
+}
+.user-message textarea{
+  height:32vh;
+  text-align:left;
+  padding:15px;
+ resize: none;
+ margin-right:10px;
+}
+.send-message-container{
+  width:65%;
+  display:flex;
+  justify-content:center;
+}
+.send-message-container button{
+  height:5vh;
+  width:40%;
+  font-size:0.6em;
+  padding:5px;
+  background-color:var(--main-color);
+  border-radius:20px;
+  margin-top:2vh;
+   box-shadow: 0 0 10px 5px var(--main-color);
+   border:1px solid var(--main-color);
+   cursor:pointer;
+   transition: transform 0.1s ease;
+}
+.send-message-container button:active {
+  transform: scale(0.90); /* scale down */
+}
+@media (max-width: 728px) {
+  .contact-container{
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+.user-info{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:1vh;
+}.user-info-box{
+  width:60%;
+  height:6vh;
+  overflow:hidden;
+  background-color:transparent;
+  border:2px solid var(--main-color);
+  border-radius:10px;
+  margin:10px;
+  padding-left:10px;
+  color:white;
+  transition:all 0.3s ease;
+  font-size:0.8em;
+  outline:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:left;
+}
+.user-message{
+  width:100%;
+  margin-top:1px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-left:0;
+}
+.send-message-container button{
+  height:5vh;
+  width:40%;
+  font-size:1em;
+  padding:5px;
+  background-color:var(--main-color);
+  border-radius:20px;
+  margin-top:2vh;
+   box-shadow: 0 0 10px 5px var(--main-color);
+   border:1px solid var(--main-color);
+   cursor:pointer;
+   transition: transform 0.1s ease;
+}
+}
