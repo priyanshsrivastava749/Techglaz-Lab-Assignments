@@ -102,5 +102,5 @@ window.addEventListener("scroll", () => {
         }, 800); // Animation duration
       }
     }
-  }, 220); 
+  }, 30);
 });
