@@ -9,20 +9,31 @@
   <link rel="stylesheet" href="style3.css" />
   <title>Priyansh Protfolio</title>
 </head>
+<!-- nav-section-mobile -->
 
 <body class="body">
+  <div class=" nav-section-mobile-inactive">
+    <div class="nav-option-mobile " > <a href="#Home">Home</a></div>
+    <div class="nav-option-mobile "> <a href="#Education">Education</a></div>
+    <div class="nav-option-mobile "> <a href="#Skills">Skills</a></div>
+    <div class="nav-option-mobile "> <a href="#Contact">Contacts</a></div>
+  </div>
   <header>
     <nav id="nav-bar">
       <section id="nav-Name">
         <h2>Priyansh</h2>
         <h2 id="nav-sur-name">Kumar</h2>
       </section>
-      <section id="nav-sections">
+      <section class="nav-sections">
         <a href="#Home" class="nav-items">Home</a>
         <a href="#Education" class="nav-items">Education</a>
         <a href="#Skills" class="nav-items">Skills</a>
-        <a href="#Contact" class="nav-items"> Contact</a>
+        <a href="#Contact" class="nav-items">Contact</a>
       </section>
+      <section class="nav-menu"><button class="nav-menu-button"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+            height="24" viewBox="0 0 24 24" style="transform: ;msFilter:;">
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg></button></section>
     </nav>
   </header>
   <main class="main">
@@ -249,11 +260,9 @@
       <span><a href="#Skills">Skills</a></span>
       <span><a href="#Contact">Contact</a></span>
     </div>
-    <div class="copy-right-section">&copy  Priyansh | All Rights Reserved</div>
+    <div class="copy-right-section">&copy Priyansh | All Rights Reserved</div>
   </footer>
-  <script src="script.js">
-
-  </script>
+  <script src="script.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed(".auto-type", {
