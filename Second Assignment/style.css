@@ -419,6 +419,39 @@ a {
   box-shadow: 0 0 20px var(--main-color);
 }
 
+@keyframes slideInRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.left-timeline-content-animation {
+  animation: slideInRightToLeft 0.8s ease-out forwards;
+}
+
+/* Keyframes for smooth left-to-right animation */
+@keyframes slideInLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); /* Start from left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at original position */
+  }
+}
+
+/* Apply animation to right timeline content */
+.right-timeline-content-animation {
+  animation: slideInLeftToRight 0.8s ease-out forwards;
+}
+
+
 @media (max-width: 728px) {
   .dividerline {
     height: 80vh;
