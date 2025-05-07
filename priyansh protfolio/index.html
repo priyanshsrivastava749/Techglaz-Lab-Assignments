@@ -13,7 +13,7 @@
 
 <body class="body">
   <div class=" nav-section-mobile-inactive">
-    <div class="nav-option-mobile " > <a href="#Home">Home</a></div>
+    <div class="nav-option-mobile "> <a href="#Home">Home</a></div>
     <div class="nav-option-mobile "> <a href="#Education">Education</a></div>
     <div class="nav-option-mobile "> <a href="#Skills">Skills</a></div>
     <div class="nav-option-mobile "> <a href="#Contact">Contacts</a></div>
@@ -207,7 +207,7 @@
     </section>
     <section id="Contact">
       <h1>Contact <span>Me</span></h1>
-      <div class="contact-container">
+      <!-- <form class="contact-container">
         <div class="user-info">
           <input type="text" placeholder="Full Name" class="user-info-box">
           <input type="email" placeholder=" Email" class="user-info-box">
@@ -219,7 +219,30 @@
           <div class="send-message-container"><button>
               Send Message
             </button></div>
+        </form> -->
+      <form class="contact-container" action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+
+        <input type="hidden" name="access_key" value="69ed1bf7-c2e5-4c25-8e71-8fbb2a375a0c">
+
+
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <div class="user-info">
+          <input type="text" placeholder="Full Name" class="user-info-box" name="name" required>
+          <input type="email" placeholder="Email" class="user-info-box" name="email" required>
+          <input type="number" placeholder="Number" class="user-info-box no-arrow" name="phone" required>
+          <input type="text" placeholder="Subject" class="user-info-box" name="subject" required>
         </div>
+
+        <div class="user-message">
+          <textarea class="user-info-box" placeholder="Type something..." rows="4" cols="50" name="message"
+            required></textarea>
+          <div class="send-message-container">
+            <button type="submit">Send Message</button>
+          </div>
+        </div>
+      </form>
+
       </div>
     </section>
   </main>
