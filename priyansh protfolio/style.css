@@ -270,6 +270,12 @@ a {
 .auto-type {
   color: var(--main-color);
 }
+.download-cv{
+  background-color:var(--main-color);
+}
+.download-cv a{
+  color:black;
+}
 .Home-right-side {
   width: 50%;
   display: flex;
@@ -409,7 +415,7 @@ a {
   border-radius: 5px;
   background-color: var(--main-color);
   position: absolute;
-  left: 49.58%;
+  left: 49.4%;
   box-shadow: 0 0 20px var(--main-color);
 }
 
